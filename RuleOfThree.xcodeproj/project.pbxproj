@@ -95,11 +95,11 @@
 		ADAF78DD2926E2F10092212E /* RuleOfThree */ = {
 			isa = PBXGroup;
 			children = (
-				ADAF78DE2926E2F10092212E /* RuleOfThreeApp.swift */,
-				ADAF78E02926E2F10092212E /* ContentView.swift */,
 				ADAF78E22926E2F40092212E /* Assets.xcassets */,
-				ADAF78E42926E2F40092212E /* RuleOfThree.entitlements */,
+				ADAF78E02926E2F10092212E /* ContentView.swift */,
 				ADAF78E52926E2F40092212E /* Preview Content */,
+				ADAF78E42926E2F40092212E /* RuleOfThree.entitlements */,
+				ADAF78DE2926E2F10092212E /* RuleOfThreeApp.swift */,
 			);
 			path = RuleOfThree;
 			sourceTree = "<group>";
