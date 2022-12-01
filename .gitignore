@@ -1,1 +1,4 @@
 xcuserdata/
+scripts/output
+# The script 'svg-to-icons' create all .png icon files
+RuleOfThree/Assets.xcassets/AppIcon.appiconset/*.png
