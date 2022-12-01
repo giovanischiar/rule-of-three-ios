@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD99D12D2938523B00642C5E /* AppIconPalette.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD99D12C2938523B00642C5E /* AppIconPalette.xcassets */; };
+		AD99D12F2938538400642C5E /* scripts in Resources */ = {isa = PBXBuildFile; fileRef = AD99D12E2938538300642C5E /* scripts */; };
 		ADAF78DF2926E2F10092212E /* RuleOfThreeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAF78DE2926E2F10092212E /* RuleOfThreeApp.swift */; };
 		ADAF78E12926E2F10092212E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAF78E02926E2F10092212E /* ContentView.swift */; };
 		ADAF78E32926E2F40092212E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADAF78E22926E2F40092212E /* Assets.xcassets */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD99D12C2938523B00642C5E /* AppIconPalette.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppIconPalette.xcassets; sourceTree = "<group>"; };
+		AD99D12E2938538300642C5E /* scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = scripts; sourceTree = "<group>"; };
 		ADAF78DB2926E2F10092212E /* RuleOfThree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RuleOfThree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADAF78DE2926E2F10092212E /* RuleOfThreeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleOfThreeApp.swift; sourceTree = "<group>"; };
 		ADAF78E02926E2F10092212E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -78,7 +82,7 @@
 				ADAF78DD2926E2F10092212E /* RuleOfThree */,
 				ADAF78EF2926E2F50092212E /* RuleOfThreeTests */,
 				ADAF78F92926E2F50092212E /* RuleOfThreeUITests */,
-				ADAF78DC2926E2F10092212E /* Products */,
+				AD99D12E2938538300642C5E /* scripts */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,6 +99,7 @@
 		ADAF78DD2926E2F10092212E /* RuleOfThree */ = {
 			isa = PBXGroup;
 			children = (
+				AD99D12C2938523B00642C5E /* AppIconPalette.xcassets */,
 				ADAF78E22926E2F40092212E /* Assets.xcassets */,
 				ADAF78E02926E2F10092212E /* ContentView.swift */,
 				ADAF78E52926E2F40092212E /* Preview Content */,
@@ -136,6 +141,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ADAF79002926E2F50092212E /* Build configuration list for PBXNativeTarget "RuleOfThree" */;
 			buildPhases = (
+				AD99D1302938548D00642C5E /* Generate SVG Icon, Generate PNGs From SVG, Copy PNGs to Assets Folder */,
 				ADAF78D72926E2F10092212E /* Sources */,
 				ADAF78D82926E2F10092212E /* Frameworks */,
 				ADAF78D92926E2F10092212E /* Resources */,
@@ -234,7 +240,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADAF78E72926E2F40092212E /* Preview Assets.xcassets in Resources */,
+				AD99D12D2938523B00642C5E /* AppIconPalette.xcassets in Resources */,
 				ADAF78E32926E2F40092212E /* Assets.xcassets in Resources */,
+				AD99D12F2938538400642C5E /* scripts in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +261,32 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AD99D1302938548D00642C5E /* Generate SVG Icon, Generate PNGs From SVG, Copy PNGs to Assets Folder */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/scripts/icon-svg-generator.swift",
+				"$(SRCROOT)/scripts/svg-to-icons.swift",
+				"$(SRCROOT)/RuleOfThree/AppIconPalette.xcassets",
+				"$(SRCROOT)/RuleOfThree/Assets.xcassets/AppIcon.appiconset",
+			);
+			name = "Generate SVG Icon, Generate PNGs From SVG, Copy PNGs to Assets Folder";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(SRCROOT)/scripts/output",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "svg=$(env -i swift scripts/icon-svg-generator.swift --palette-dir RuleOfThree/AppIconPalette.xcassets)\nenv -i swift scripts/svg-to-icons.swift --svg-content \"$svg\" --svg-file-name icon-launcher.svg\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ADAF78D72926E2F10092212E /* Sources */ = {
