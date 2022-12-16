@@ -271,10 +271,9 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/scripts/icon-svg-generator.swift",
-				"$(SRCROOT)/scripts/svg-to-icons.swift",
 				"$(SRCROOT)/RuleOfThree/AppIconPalette.xcassets",
 				"$(SRCROOT)/RuleOfThree/Assets.xcassets/AppIcon.appiconset",
+				"$(SRCROOT)/RuleOfThree/*",
 			);
 			name = "Generate SVG Icon, Generate PNGs From SVG, Copy PNGs to Assets Folder";
 			outputFileListPaths = (
@@ -284,7 +283,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "svg=$(env -i swift scripts/icon-svg-generator.swift --palette-dir RuleOfThree/AppIconPalette.xcassets)\nenv -i swift scripts/svg-to-icons.swift --svg-content \"$svg\" --svg-file-name icon-launcher.svg\n";
+			shellScript = "bash scripts/IconCreator/icon-creator.sh ios\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

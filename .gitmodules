@@ -1,0 +1,3 @@
+[submodule "scripts/IconCreator"]
+	path = scripts/IconCreator
+	url = git@github.com:giovanischiar/icon-creator.git

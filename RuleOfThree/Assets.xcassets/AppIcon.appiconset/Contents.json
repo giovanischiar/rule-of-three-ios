@@ -1,1 +1,179 @@
-{"images":[{"platform":"ios","idiom":"universal","filename":"icon-launcher-20x20@2x.png","size":"20x20","scale":"2x"},{"platform":"ios","idiom":"universal","filename":"icon-launcher-20x20@3x.png","size":"20x20","scale":"3x"},{"platform":"ios","idiom":"universal","filename":"icon-launcher-29x29@2x.png","size":"29x29","scale":"2x"},{"platform":"ios","idiom":"universal","filename":"icon-launcher-29x29@3x.png","size":"29x29","scale":"3x"},{"platform":"ios","idiom":"universal","filename":"icon-launcher-38x38@2x.png","size":"38x38","scale":"2x"},{"platform":"ios","idiom":"universal","filename":"icon-launcher-38x38@3x.png","size":"38x38","scale":"3x"},{"platform":"ios","idiom":"universal","filename":"icon-launcher-40x40@2x.png","size":"40x40","scale":"2x"},{"platform":"ios","idiom":"universal","filename":"icon-launcher-40x40@3x.png","size":"40x40","scale":"3x"},{"platform":"ios","idiom":"universal","filename":"icon-launcher-60x60@2x.png","size":"60x60","scale":"2x"},{"platform":"ios","idiom":"universal","filename":"icon-launcher-60x60@3x.png","size":"60x60","scale":"3x"},{"platform":"ios","idiom":"universal","filename":"icon-launcher-64x64@2x.png","size":"64x64","scale":"2x"},{"platform":"ios","idiom":"universal","filename":"icon-launcher-64x64@3x.png","size":"64x64","scale":"3x"},{"platform":"ios","idiom":"universal","filename":"icon-launcher-68x68@2x.png","size":"68x68","scale":"2x"},{"platform":"ios","idiom":"universal","filename":"icon-launcher-76x76@2x.png","size":"76x76","scale":"2x"},{"platform":"ios","idiom":"universal","filename":"icon-launcher-83.5x83.5@2x.png","size":"83.5x83.5","scale":"2x"},{"size":"1024x1024","idiom":"universal","filename":"icon-launcher-1024x1024.png","platform":"ios"},{"size":"16x16","idiom":"mac","filename":"icon-launcher-16x16@1x.png","scale":"1x"},{"size":"16x16","idiom":"mac","filename":"icon-launcher-16x16@2x.png","scale":"2x"},{"size":"32x32","idiom":"mac","filename":"icon-launcher-32x32@1x.png","scale":"1x"},{"size":"32x32","idiom":"mac","filename":"icon-launcher-32x32@2x.png","scale":"2x"},{"size":"128x128","idiom":"mac","filename":"icon-launcher-128x128@1x.png","scale":"1x"},{"size":"128x128","idiom":"mac","filename":"icon-launcher-128x128@2x.png","scale":"2x"},{"size":"256x256","idiom":"mac","filename":"icon-launcher-256x256@1x.png","scale":"1x"},{"size":"256x256","idiom":"mac","filename":"icon-launcher-256x256@2x.png","scale":"2x"},{"size":"512x512","idiom":"mac","filename":"icon-launcher-512x512@1x.png","scale":"1x"},{"size":"512x512","idiom":"mac","filename":"icon-launcher-512x512@2x.png","scale":"2x"}],"info":{"version":1,"author":"xcode"}}
+{
+  "images" : [
+    {
+      "platform" : "ios",
+      "idiom" : "universal",
+      "filename" : "AppIcon-20x20@2x.png",
+      "size" : "20x20",
+      "scale" : "2x"
+    },
+    {
+      "platform" : "ios",
+      "idiom" : "universal",
+      "filename" : "AppIcon-20x20@3x.png",
+      "size" : "20x20",
+      "scale" : "3x"
+    },
+    {
+      "platform" : "ios",
+      "idiom" : "universal",
+      "filename" : "AppIcon-29x29@2x.png",
+      "size" : "29x29",
+      "scale" : "2x"
+    },
+    {
+      "platform" : "ios",
+      "idiom" : "universal",
+      "filename" : "AppIcon-29x29@3x.png",
+      "size" : "29x29",
+      "scale" : "3x"
+    },
+    {
+      "platform" : "ios",
+      "idiom" : "universal",
+      "filename" : "AppIcon-38x38@2x.png",
+      "size" : "38x38",
+      "scale" : "2x"
+    },
+    {
+      "platform" : "ios",
+      "idiom" : "universal",
+      "filename" : "AppIcon-38x38@3x.png",
+      "size" : "38x38",
+      "scale" : "3x"
+    },
+    {
+      "platform" : "ios",
+      "idiom" : "universal",
+      "filename" : "AppIcon-40x40@2x.png",
+      "size" : "40x40",
+      "scale" : "2x"
+    },
+    {
+      "platform" : "ios",
+      "idiom" : "universal",
+      "filename" : "AppIcon-40x40@3x.png",
+      "size" : "40x40",
+      "scale" : "3x"
+    },
+    {
+      "platform" : "ios",
+      "idiom" : "universal",
+      "filename" : "AppIcon-60x60@2x.png",
+      "size" : "60x60",
+      "scale" : "2x"
+    },
+    {
+      "platform" : "ios",
+      "idiom" : "universal",
+      "filename" : "AppIcon-60x60@3x.png",
+      "size" : "60x60",
+      "scale" : "3x"
+    },
+    {
+      "platform" : "ios",
+      "idiom" : "universal",
+      "filename" : "AppIcon-64x64@2x.png",
+      "size" : "64x64",
+      "scale" : "2x"
+    },
+    {
+      "platform" : "ios",
+      "idiom" : "universal",
+      "filename" : "AppIcon-64x64@3x.png",
+      "size" : "64x64",
+      "scale" : "3x"
+    },
+    {
+      "platform" : "ios",
+      "idiom" : "universal",
+      "filename" : "AppIcon-68x68@2x.png",
+      "size" : "68x68",
+      "scale" : "2x"
+    },
+    {
+      "platform" : "ios",
+      "idiom" : "universal",
+      "filename" : "AppIcon-76x76@2x.png",
+      "size" : "76x76",
+      "scale" : "2x"
+    },
+    {
+      "platform" : "ios",
+      "idiom" : "universal",
+      "filename" : "AppIcon-83.5x83.5@2x.png",
+      "size" : "83.5x83.5",
+      "scale" : "2x"
+    },
+    {
+      "size" : "1024x1024",
+      "idiom" : "universal",
+      "filename" : "AppIcon-1024x1024.png",
+      "platform" : "ios"
+    },
+    {
+      "size" : "16x16",
+      "idiom" : "mac",
+      "filename" : "AppIcon-16x16@1x.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "16x16",
+      "idiom" : "mac",
+      "filename" : "AppIcon-16x16@2x.png",
+      "scale" : "2x"
+    },
+    {
+      "size" : "32x32",
+      "idiom" : "mac",
+      "filename" : "AppIcon-32x32@1x.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "32x32",
+      "idiom" : "mac",
+      "filename" : "AppIcon-32x32@2x.png",
+      "scale" : "2x"
+    },
+    {
+      "size" : "128x128",
+      "idiom" : "mac",
+      "filename" : "AppIcon-128x128@1x.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "128x128",
+      "idiom" : "mac",
+      "filename" : "AppIcon-128x128@2x.png",
+      "scale" : "2x"
+    },
+    {
+      "size" : "256x256",
+      "idiom" : "mac",
+      "filename" : "AppIcon-256x256@1x.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "256x256",
+      "idiom" : "mac",
+      "filename" : "AppIcon-256x256@2x.png",
+      "scale" : "2x"
+    },
+    {
+      "size" : "512x512",
+      "idiom" : "mac",
+      "filename" : "AppIcon-512x512@1x.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "512x512",
+      "idiom" : "mac",
+      "filename" : "AppIcon-512x512@2x.png",
+      "scale" : "2x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}
