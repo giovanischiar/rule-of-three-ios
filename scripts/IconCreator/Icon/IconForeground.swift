@@ -6,7 +6,6 @@
 //
 
 struct IconForeground: Tag {
-    let theme = Traits.shared.theme
     let dimensions = Traits.shared.dimensions
     
     var iconSize: Double { dimensions.iconSize }
@@ -50,22 +49,6 @@ struct IconForeground: Tag {
         Vector(viewBox: [0, 0, iconSize, iconSize]) {
             contentBody
                 .scaled(factor: scaleFactor)
-                .center()
         }
     }
 }
-
-extension IconForeground {
-    var vectordrawable: String {
-        return TagDecoder().prettyDecode(self, xmlType: .vectordrawable)
-    }
-
-    func disposition(_ value: Double) -> IconForeground {
-        IconForeground(disposition: disposition)
-    }
-
-    func scaleFactor(_ value: Double) -> IconForeground {
-        IconForeground(scaleFactor: scaleFactor)
-    }
-}
-
