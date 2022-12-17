@@ -273,17 +273,18 @@
 			inputPaths = (
 				"$(SRCROOT)/RuleOfThree/AppIconPalette.xcassets",
 				"$(SRCROOT)/RuleOfThree/Assets.xcassets/AppIcon.appiconset",
-				"$(SRCROOT)/RuleOfThree/*",
+				"$(SRCROOT)/RuleOfThree/scripts/IconCreator/Icon",
 			);
 			name = "Generate SVG Icon, Generate PNGs From SVG, Copy PNGs to Assets Folder";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(SRCROOT)/scripts/output",
+				"$(SRCROOT)/RuleOfThree/scripts/IconCreator/Library/build",
+				"$(SRCROOT)/RuleOfThree/scripts/IconCreator/Library/output",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "bash scripts/IconCreator/icon-creator.sh ios\n";
+			shellScript = "bash scripts/IconCreator/Library/icon-creator.sh ios ../../RuleOfThree ../Icon\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
