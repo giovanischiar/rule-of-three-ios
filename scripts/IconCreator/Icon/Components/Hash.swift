@@ -9,15 +9,13 @@ struct Hash: Tag {
     var x: Double
     var y: Double
     
-    let theme = Traits.shared.theme
     let dimensions = Traits.shared.dimensions
     var strokeWidth: Double { dimensions.strokeWidth }
-    var color: String { theme.hashColor }
     
     var body: [any Tag] {
         Path()
             .d(HashPathData(x: x, y: y))
-            .stroke(color: color)
+            .stroke(color: -"hashColor")
             .stroke(width: strokeWidth)
             .fill(opacity: 0.0)
             .scaled(factor: dimensions.hashSize)

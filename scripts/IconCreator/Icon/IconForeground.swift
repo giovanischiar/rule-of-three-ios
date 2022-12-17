@@ -9,7 +9,6 @@ struct IconForeground: Tag {
     let theme = Traits.shared.theme
     let dimensions = Traits.shared.dimensions
     
-    var squareColor: String { theme.squareStrokeColor }
     var iconSize: Double { dimensions.iconSize }
     var squareSize: Double { dimensions.squareSize }
     var strokeWidth: Double { dimensions.strokeWidth }
@@ -23,13 +22,13 @@ struct IconForeground: Tag {
         Square(x: -disposition, y: -disposition, size: squareSize) {
             Hash(x: -disposition, y: -disposition)
         }
-        .stroke(color: squareColor)
+        .stroke(color: -"squareStrokeColor")
         .stroke(width: strokeWidth)
 
         Square(x: disposition, y: -disposition, size: squareSize) {
             Hash(x: disposition, y: -disposition)
         }
-        .stroke(color: squareColor)
+        .stroke(color: -"squareStrokeColor")
         .stroke(width: strokeWidth)
 
         X(x: 0, y: 0).body
@@ -37,13 +36,13 @@ struct IconForeground: Tag {
         Square(x: -disposition, y: disposition, size: squareSize) {
             Hash(x: -disposition, y: disposition)
         }
-        .stroke(color: squareColor)
+        .stroke(color: -"squareStrokeColor")
         .stroke(width: strokeWidth)
 
         Square(x: disposition, y: disposition, size: squareSize) {
             QuestionMark(x: disposition, y: disposition)
         }
-        .stroke(color: squareColor)
+        .stroke(color: -"squareStrokeColor")
         .stroke(width: strokeWidth)
     }
     

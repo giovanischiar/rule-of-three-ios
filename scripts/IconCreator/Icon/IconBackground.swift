@@ -7,8 +7,6 @@
 
 struct IconBackground: Tag {
     let dimensions = Traits.shared.dimensions
-    let theme = Traits.shared.theme
-    var backgroundColor: String { theme.backgroundColor }
     var size: Double { dimensions.iconSize }
     
     func radius(backgroundType: BackgroundType) -> Double {
@@ -21,18 +19,12 @@ struct IconBackground: Tag {
 
     @TagBuilder func contentBody(type: BackgroundType = .square) -> [any Tag] {
         Square(x: 0, y: 0, size: size, radius: radius(backgroundType: type))
-            .fill(color: backgroundColor)
+            .fill(color: -"backgroundColor")
     }
 
     var body: [any Tag] {
         Vector(viewBox: [0, 0, size, size]) {
             contentBody(type: .square)
         }
-    }
-}
-
-extension IconBackground {
-    var vectordrawable: String {
-        return TagDecoder().prettyDecode(self, xmlType: .vectordrawable)
     }
 }
