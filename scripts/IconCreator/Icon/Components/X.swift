@@ -17,7 +17,6 @@ struct X: Tag {
             .d(XPathData(x: x, y: y, width: dimensions.xSize, height: dimensions.xSize))
             .stroke(color: -"xColor")
             .stroke(width: strokeWidth)
-            .fill(opacity: 1)
-            .fill(with: -"xColor")
+            .fill(color: -"xColor")
     }
 }

@@ -17,8 +17,7 @@ struct QuestionMark: Tag {
             .d(QuestionMarkPathData(x: x, y: y))
             .stroke(color: -"questionMarkColor")
             .stroke(width: 1)
-            .fill(opacity: 1)
-            .fill(with: -"questionMarkColor")
+            .fill(color: -"questionMarkColor")
             .scaled(factor: size * 0.00203704)
     }
 }
