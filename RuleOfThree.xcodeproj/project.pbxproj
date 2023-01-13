@@ -272,15 +272,13 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/RuleOfThree/AppIconPalette.xcassets",
-				"$(SRCROOT)/RuleOfThree/Assets.xcassets/AppIcon.appiconset",
 				"$(SRCROOT)/RuleOfThree/scripts/IconCreator/Icon",
 			);
 			name = "Generate SVG Icon, Generate PNGs From SVG, Copy PNGs to Assets Folder";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(SRCROOT)/RuleOfThree/scripts/IconCreator/Library/build",
-				"$(SRCROOT)/RuleOfThree/scripts/IconCreator/Library/output",
+				"$(SRCROOT)/RuleOfThree/Assets/AppIcon.appiconset",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
